@@ -17,9 +17,9 @@ def cors(response):
     return response
 
 
-# http GET request route
+# http GET requests
 # endpoint:  url/?search=searchTerm
-@app.route('/')
+@app.route('/', methods=['GET', 'POST'])
 def get():
     searchTerm = request.args.get('search')
     
