@@ -1,1 +1,1 @@
-web: gunicorn wsgi:wikiApi
+web: gunicorn wikiApi:app
