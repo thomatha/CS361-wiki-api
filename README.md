@@ -1,4 +1,4 @@
-# CS361-wikiApi2
+# CS361-wikiApi
 
 A microservice implemented with Python's Flask framework.
 This API communicates via a http GET request.
