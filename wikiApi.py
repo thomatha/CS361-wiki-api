@@ -4,7 +4,7 @@ endpoint:  url/?search=searchTerm
 """
 
 
-from flask import Flask, jsonify, request
+from flask import Flask, jsonify, redirect, request
 import wikipedia
 
 
@@ -24,7 +24,7 @@ def get():
     searchTerm = request.args.get('search')
     
     try:
-        return jsonify({searchTerm: wikipedia.summary(searchTerm)})
+        return jsonify({searchTerm: wikipedia.summary(searchTerm, auto_suggest=False, redirect=True)})
     except:
         # error
         return 'Remove any space or symbol from search term, or try a different search.'
