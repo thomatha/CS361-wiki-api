@@ -11,3 +11,7 @@ userQueryString is the value being searched for
 Example GET request: url/?search=meme
 Returned result:
 {"meme": ""A meme ( MEEM) is an idea, behavior, or style that spreads by means of imitation from person to person within a culture and often carries symbolic meaning representing a particular phenomenon or theme. A meme acts..."}
+
+Deployed to Heroku
+endpoint
+https://cs361-wiki-app.herokuapp.com/?search=userQueryString
